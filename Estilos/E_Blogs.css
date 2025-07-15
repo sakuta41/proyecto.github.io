@@ -1,0 +1,171 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #add8e6;
+    color: #003366;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #add8e6;
+    color: #003366;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: #003366;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p.subtitle {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+}
+
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+article {
+    background: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article h2 {
+    color: DodgerBlue;
+    font-size: 1.8em;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+section.comentarios {
+    background: LightSteelBlue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section.comentarios h3 {
+    margin-top: 0;
+    color: DodgerBlue;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: RoyalBlue;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    header nav a {
+        margin: 5px 8px;
+        font-size: 0.95em;
+    }
+
+    article h2 {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p.subtitle {
+        font-size: 1em;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    article h2 {
+        font-size: 1.3em;
+    }
+}

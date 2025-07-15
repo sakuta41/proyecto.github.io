@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #add8e6;
+  color: #003366;
+  padding: 1rem;
+}
+
+.logo-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  margin: 5px 10px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.buscador-container {
+  background-color: #999;
+  color: #000;
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buscador-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.formulario-vuelo {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seleccion-boletos h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.combo-boleto {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.boton-generar {
+  background-color: #ffc800;
+  color: #000;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-generar:hover {
+  background-color: #e6b800;
+}
+
+footer {
+  background-color: #add8e6;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 8px;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header nav a {
+    margin: 5px 5px;
+  }
+
+  .buscador-container {
+    padding: 30px 15px;
+  }
+
+  .formulario-vuelo {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-contenedor h1 {
+    font-size: 20px;
+  }
+
+  .buscador-container h2 {
+    font-size: 20px;
+  }
+
+  .seleccion-boletos h3 {
+    font-size: 18px;
+  }
+
+  .combo-boleto {
+    width: 100%;
+  }
+
+  .boton-generar {
+    width: 100%;
+  }
+}

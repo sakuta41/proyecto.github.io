@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #add8e6;
+  color: #003366;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bienvenida-nosotros,
+.historia,
+.mision-vision-valores,
+.equipo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.mision-vision-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mision-vision-valores > div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.mision-vision-valores h3 {
+  margin-top: 0;
+}
+
+.mision-vision-valores ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.mision-vision-valores li {
+  margin-bottom: 10px;
+}
+
+.equipo .miembros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.equipo article {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.equipo img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  background-color: #add8e6;
+  color: #003366;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer nav a {
+  color: #003366;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .mision-vision-valores {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .equipo .miembros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mision-vision-valores > div,
+  .equipo article {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}

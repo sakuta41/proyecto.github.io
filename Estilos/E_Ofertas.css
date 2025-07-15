@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #add8e6;
+  color: #003366;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #add8e6;
+  color: #003366;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.destinos, .ofertas {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.destinos h2, .ofertas h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1E90FF;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.galeria div {
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ofertas .tabla-ofertas {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #1E90FF;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #add8e6;
+  color: #003366;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer nav a {
+  color: #003366;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+/* === Responsivo === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
