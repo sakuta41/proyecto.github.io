@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos/E_Contacto.css">
+</head>
+<body>
+
+<header>
+    <h1>Contáctanos</h1>
+    <p>Estamos aquí para ayudarte a planear tu próxima aventura</p>
+    <nav>
+        <a href="index.html">Inicio</a>      
+        <a href="Agencia de viajes.html">Agencia</a>
+        <a href="Buses.html">Buses</a>
+        <a href="Cruceros.html">Cruceros</a>      
+        <a href="Blog.html">Blog</a>
+    </nav>
+</header>
+
+<form onsubmit="return enviarCorreo()">
+    <label>Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label>Email:</label>
+    <input type="email" id="email" required>
+    <label>Mensaje:</label>
+    <textarea id="mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+</form>
+
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.2431072593756!2d-71.53740897080028!3d-16.398832366287295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a59ffae2999%3A0xc419f49d1f9cd270!2sPlaza%20de%20Armas%20de%20Arequipa!5e0!3m2!1ses!2spe!4v1713722706602!5m2!1ses!2spe"
+    width="80%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<div class="info">
+    <h2>Información de contacto</h2>
+    <p>📞 Teléfono: +51 961 720 899</p>
+    <p>✉️ Email: sergioborda244@gmail.com</p>
+    <p>🌐 Redes: 
+        <a href="https://web.facebook.com/" target="_blank">Facebook</a> | 
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </p>
+</div>
+
+<marquee behavior="scroll" direction="left">🕒 Horario de atención: Lunes a Sábado de 9:00 a.m. a 6:00 p.m.</marquee>
+
+<script src="JavaScrip/J_Contactos.js"></script>
+</body>
+</html>

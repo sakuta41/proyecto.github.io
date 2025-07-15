@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Estilos/E_Boleto_Crucero.css" />
+  <title>Mundo Viajero - Boleto de Crucero</title>
+</head>
+<body>
+  <header>
+    <div class="logo-contenedor">
+      <img src="Imagenes/Logo_V1.png" alt="Logo de Mundo Viajero" class="logo" />
+      <h1>Mundo Viajero</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-boleto">
+      <h2>Boleto de Crucero</h2>
+      <form id="formBoletoCrucero">
+        <select id="origen" required>
+          <option value="">Seleccioná puerto de origen</option>
+          <option value="Puerto del Callao">Puerto del Callao</option>
+          <option value="Puerto de Ilo">Puerto de Ilo</option>
+          <option value="Puerto de Matarani">Puerto de Matarani</option>
+        </select>
+
+        <select id="destino" required>
+          <option value="">Seleccioná destino</option>
+          <option value="Puerto de Valparaíso">Puerto de Valparaíso</option>
+          <option value="Puerto de Veracruz">Puerto de Veracruz</option>
+          <option value="Puerto de Guayaquil">Puerto de Guayaquil</option>
+          <option value="Puerto de Balboa">Puerto de Balboa</option>
+        </select>
+
+        <input type="date" id="fecha" required>
+        <input type="number" id="personas" placeholder="Cantidad de personas" min="1" required>
+
+        <label>Tipo de crucero</label>
+        <select id="tipo-crucero" required>
+          <option value="">Seleccioná tipo</option>
+          <option value="Lujo">Lujo</option>
+          <option value="Familiar">Familiar</option>
+          <option value="Aventura">Aventura</option>
+          <option value="Romántico">Romántico</option>
+          <option value="Económico">Económico</option>
+        </select>
+
+        <label>¿Solicita hospedaje?</label>
+        <select id="hospedaje-opcion" required>
+          <option value="">Seleccioná una opción</option>
+          <option value="Si">Sí</option>
+          <option value="No">No</option>
+        </select>
+
+        <div id="hospedaje-container" style="display: none;">
+          <label>Elegí hospedaje:</label>
+          <select id="hospedaje">
+            <option value="">Seleccioná hospedaje</option>
+            <option value="Hotel Paraíso">Hotel Paraíso</option>
+            <option value="Resort Vista Mar">Resort Vista Mar</option>
+            <option value="Eco Lodge Verde">Eco Lodge Verde</option>
+            <option value="Hostal Central">Hostal Central</option>
+            <option value="Villa del Sol">Villa del Sol</option>
+          </select>
+        </div>
+
+        <button type="submit">Generar Boleto</button>
+      </form>
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mundo Viajero. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="JavaScrip/J_Boleto_Crucero.js"></script>
+</body>
+</html>
